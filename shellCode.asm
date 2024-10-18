@@ -11,7 +11,7 @@ _start:
         xor ebx,ebx
         inc ebx
         xor edx,edx
-        mov dl,6
+        mov dl,15
         int 0x80
 
         mov al,1
@@ -20,4 +20,4 @@ _start:
 
     dummy:
         call imprimir_str
-        mensaje db 'Pablo', 0x0b
+        mensaje db 'Ganaste Pablo!', 0x0b
